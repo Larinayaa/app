@@ -12,7 +12,8 @@ const PropsFC = () => {
     const updatedList = championsList.filter(champion => champion.name !== name);
     setChampionsList(updatedList);
   };
-  return (
+  return ( 
+
     <>
       <h1>Чемпионы мира по шахматам</h1>
       {championsList.map((champion) => (
