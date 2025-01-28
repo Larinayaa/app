@@ -1,0 +1,91 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-image: url('k1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  font-family: Arial, sans-serif;
+}
+h1 {
+  text-align: center;
+  color: white;
+  margin-top: 20px;
+}
+.championCard {
+  background-color: rgba(255, 255, 255, 0.8); 
+  border-radius: 15px;
+  padding: 10px;
+  margin: 10px auto;
+  width: 90%; 
+  max-width: 300px; 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.championCard:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+.championName {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 8px;
+}
+.championYears,
+.championCountry {
+  font-size: 1rem;
+  color: #555;
+}
+button {
+  background-color: #3113b8;
+  color: white;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+button:hover {
+  background-color: #1c11b6;
+}
+input,
+textarea {
+  border: 2px solid #007bff;
+  border-radius: 10px;
+  padding: 5px; 
+  font-size: 0.9rem;
+  width: 95%;
+  margin-bottom: 5px;
+  background-color: rgba(173, 216, 230, 0.7);
+}
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #0056b3;
+  box-shadow: 0 0 5px rgba(0, 0, 255, 0.6);
+}
+textarea {
+  height: 30px; 
+}
+@media (max-width: 600px) {
+  .championCard {
+    width: 95%;
+    max-width: 250px; 
+  }
+  .championName {
+    font-size: 1rem;
+  }
+  .championYears,
+  .championCountry {
+    font-size: 0.9rem;
+  }
+  button {
+    padding: 6px 12px;
+  }
+  input,
+  textarea {
+    padding: 6px;
+  }
+}
